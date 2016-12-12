@@ -54,7 +54,7 @@ var myapp = new Vue({
       app.myResults = "Searching for " + this.mySearch;
       console.log(app.myResults);
       this.$http.get(
-         'http://apis.is/car/?number=aa031'
+         'https://apis.is/car/?number=aa031'
           )
         .then((response) => {
           console.log(response);
