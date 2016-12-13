@@ -40,7 +40,7 @@ var myapp = new Vue({
       // Using vue-resource
       this.$http.get(
 //         'http://apis.is/car/?number=aa031'
-          'http://s1c1.env1.metastore.cvt.dk:8983/solr/metastore_shard1_replica1/select?q=water&wt=json'
+          'http://s1c1.env1.metastore.cvt.dk:8983/solr/metastore_shard11_replica1/select?q=*%3A*&wt=json&indent=true'
           )
         .then((response) => {
           console.log(response);
